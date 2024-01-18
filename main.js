@@ -5,7 +5,7 @@ const productos = [
     { id: 4, nombre: "Monitor", precio: 18000 },
 ];
 
-let carrito = [];                   // [] significa que esta basio
+let carrito = [];                                               // [] significa que esta basio
 let boton = document.getElementById("btn");
 
 const agregarAlCarrito = (id) => {
@@ -20,7 +20,7 @@ const producto = productos.find((item) => item.id === id);
 };
 
 const actualizarCarrito = () => {
-// se guarda los datos del carrito en localStorage
+                                                                // se guarda los datos del carrito en localStorage
 localStorage.setItem("carrito", JSON.stringify(carrito));
 console.log(carrito);
 };
@@ -28,7 +28,7 @@ console.log(carrito);
 productos.forEach((item) => {
 let div = document.createElement("div");
 
-//Se Agrega HTML
+                                                                //Se Agrega HTML
 div.innerHTML = `
 <h1>Id: ${item.id}</h1>
 <p>Nombre: ${item.nombre}</p>
